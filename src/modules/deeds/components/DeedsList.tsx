@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '@/core/hooks'
-import { useRouter } from 'next/router'
 import { fetchAllDeeds, deleteDeed } from '@/modules/deeds/deeds.actions'
 import { Button, Card } from 'antd'
 import CreateDeedForm from '@/modules/deeds/components/CreateDeedForm'
@@ -9,7 +8,6 @@ const DeedsList = () => {
   const deeds = useAppSelector(state => state.deeds.deeds.data.deeds)
 
   const dispatch = useAppDispatch()
-  const router = useRouter()
 
   const handleDeleteDeed = (id: string) => {
     dispatch(deleteDeed(id))

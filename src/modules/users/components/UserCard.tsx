@@ -5,7 +5,6 @@ import { addFriend,  removeFriend } from '@/modules/users/users.actions'
 import { UserModel } from '@/models/user.model'
 
 interface UserCardProps {
-  // userId: string
   user: UserModel
 }
 

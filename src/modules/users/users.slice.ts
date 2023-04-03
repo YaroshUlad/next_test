@@ -1,6 +1,5 @@
 import { APIStatus, IApiErrorResponse } from '@/core/api'
 import { createSlice, isAnyOf } from '@reduxjs/toolkit'
-import { login, profile, signup } from '@/modules/auth/auth.actions'
 import { UserModel } from '@/models/user.model'
 import { fetchAllUsers, fetchById, updateUsername } from '@/modules/users/users.actions'
 

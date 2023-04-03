@@ -1,17 +1,5 @@
 import { GetServerSidePropsContext, NextPageContext } from 'next'
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosError, AxiosResponse } from 'axios'
-// import { getSession } from 'next-auth/react'
-// import { parseCookies } from 'nookies'
-
-// import AuthService from '@/modules/auth/auth.service'
-// import ProfileService from '@/modules/profile/profile.service'
-// import FilmService from '@/modules/film/film.service'
-// import SerialService from '@/modules/serial/serial.service'
-// import SearchService from '@/modules/search/search.service'
-// import PlayerEventService from '@/modules/player/player-event.service'
-// import PlayerPremierTrexCounterService from '@/modules/player/player-premier-trex-counter.service'
-
-import * as utils from '@/core/utils'
 
 import { API_URL } from '@/config'
 import AuthService from '@/modules/auth/auth.service'

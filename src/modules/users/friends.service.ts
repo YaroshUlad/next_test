@@ -1,4 +1,3 @@
-// import { UserModel } from '@/models/user.model'
 import { ApiHelper } from '@/core/api'
 
 export default (api: ApiHelper) => ({

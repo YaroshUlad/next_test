@@ -23,9 +23,6 @@ const HomeLayout: FC<HomeLayoutProps> = ({ title, children }) => {
       <Header>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ color: 'white', fontSize: 16, display: 'flex', justifyContent: 'center', flexGrow: 1  }}>Test next nest</div>
-          {/*<Dropdown menu={{ items }} placement='bottomRight'>*/}
-          {/*  <Avatar icon={<UserOutlined />} />*/}
-          {/*</Dropdown>*/}
           <HeaderMenuButton/>
         </div>
       </Header>

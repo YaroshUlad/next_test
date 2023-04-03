@@ -51,12 +51,6 @@ export const AuthSlice = createSlice({
         state.auth.data.profile = payload
       })
 
-      // .addCase(userInfo.fulfilled, (state, { payload }) => {
-      //   console.log('from Slice', payload)
-      //   state.auth.status = APIStatus.FULFILLED
-      //   state.auth.data.userInfo = payload
-      // })
-
       .addMatcher(isAnyOf(login.fulfilled, signup.fulfilled),
         (state, { payload }) => {
           state.auth.status = APIStatus.FULFILLED

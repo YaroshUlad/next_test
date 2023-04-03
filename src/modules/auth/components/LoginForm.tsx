@@ -3,10 +3,6 @@ import { Button, Form, Input } from 'antd'
 import { useAppDispatch, useAppSelector } from '@/core/hooks'
 import { login, LoginDTO } from '@/modules/auth/auth.actions'
 import { useRouter } from 'next/router'
-//
-// const onFinish = (values: any) => {
-//   console.log('Success:', values)
-// }
 
 const LoginForm = () => {
   const token = useAppSelector(state => state.auth.auth.data.accessToken)
